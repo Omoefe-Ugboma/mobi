@@ -18,10 +18,31 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("FLutter Basics"),
+          title: const Text(
+            "FLutter Basics",),
         ),
-        body:const Center(
-          child: Text("Hello  World"),
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 200,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(100),
+              ),
+            child: Center(
+              child: const Text(
+                "Hello  World",
+                 style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 20,
+                ),
+              ),
+            ),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: ()=> debugPrint('clicked'),
+          child: const Icon(Icons.abc_outlined),
         ),
       ),
     );
