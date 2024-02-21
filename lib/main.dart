@@ -31,7 +31,15 @@ class MyApp extends StatelessWidget{
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text('Dane Max - Freelancer for flutter'),
+                    const Expanded(
+                      flex: 2,
+                      child: Text(
+                        'Dane Max - Freelancer for flutter -',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    // Text('Dane Max - Freelancer for flutter - living in Lagos Nigeria sdfsdfsf fdsfd '),
                     Container(
                       height: 20,
                       width: 20,
