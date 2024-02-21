@@ -28,14 +28,25 @@ class MyApp extends StatelessWidget{
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  color: Colors.green,
-                  child: const Padding(
-                    padding: EdgeInsets.all(20.0),
-                    child: Text(
-                      'First Column child',
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text('Dane Max - Freelancer for flutter'),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.blue,
                     ),
-                  ),
+                    const SizedBox(
+                      width: 8,
+                    ),
+
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.green,
+                    ),
+                  ],
                 ),
                 const SizedBox(
                   height: 20,
