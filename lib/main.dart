@@ -75,7 +75,19 @@ class MyApp extends StatelessWidget{
                   ),
                 ),
                 SizedBox(
-                  child: Image.asset('assets/tour-5.jpeg'),
+                  width: 200,
+                  height: 200,
+                  child: Image.asset(
+                    'assets/tour-5.jpeg',
+                    fit: BoxFit.cover,
+                    ),
+                ),
+                const SizedBox(
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                      'https://www.course-api.com/images/tours/tour-5.jpeg',
+                    ),
+                  ),
                 ),
                 const SizedBox(
                   height: 40,
