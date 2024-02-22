@@ -74,6 +74,9 @@ class MyApp extends StatelessWidget{
                     ),
                   ),
                 ),
+                SizedBox(
+                  child: Image.asset('assets/tour-5.jpeg'),
+                ),
                 const SizedBox(
                   height: 40,
                 ),
