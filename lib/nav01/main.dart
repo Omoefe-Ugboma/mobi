@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mobi/screen_a.dart';
-import 'package:mobi/screen_b.dart';
 
 void main(){
   runApp(const MyApp());
@@ -13,11 +12,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     
       return MaterialApp(
-         initialRoute: '/',
-         routes: {
-          '/': (context) => ScreenA(),
-          '/screenB': (context) => ScreenB(),
-         },
+        home: ScreenA(),
       );
      
   }

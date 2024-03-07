@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
- 
+import 'package:mobi/screen_b.dart';
 
 class ScreenA extends StatelessWidget{
   @override
@@ -10,10 +10,13 @@ class ScreenA extends StatelessWidget{
       ),
       body: Center(
         child: ElevatedButton(
-           onPressed: (){
-            Navigator.pushNamed(context, '/screenB');
-           },
-          child: Text('Go back to Screen B'),
+          onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ScreenB()),
+            );
+          },
+          child: Text('Go to Screen B'),
         ),
       ),
     );
